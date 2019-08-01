@@ -1,33 +1,25 @@
-    let x = parseInt(document.getElementById('numb1').value);
-    let y = parseInt(document.getElementById('numb2').value);
+    let x =document.getElementById('numb1');
+    let y = document.getElementById('numb2');
 function addition() {
-    let x = parseInt(document.getElementById('numb1').value);
-    let y = parseInt(document.getElementById('numb2').value);
-    let z = x +y;
-    document.getElementById("result").innerHTML = "Result Addition : " + z;
+    let add = parseInt(x.value) +parseInt(y.value);
+    document.getElementById("result").innerHTML = "Result Addition : " + add;
 }
 
 function subtraction() {
-    let x = parseInt(document.getElementById('numb1').value);
-    let y = parseInt(document.getElementById('numb2').value);
-    let z = x - y;
-    document.getElementById("result").innerHTML = "Result Subtraction : " + z;
+    let sub = parseInt(x.value) - parseInt(y.value);
+    document.getElementById("result").innerHTML = "Result Subtraction : " + sub;
 }
 
 function Multipilcaton() {
-    let x = parseInt(document.getElementById('numb1').value);
-    let y = parseInt(document.getElementById('numb2').value);
-    let z = x* y;
-    document.getElementById("result").innerHTML = "Result Multiplication : " + z;
+    let mul = parseInt(x.value) * parseInt(y.value);
+    document.getElementById("result").innerHTML = "Result Multiplication : " + mul;
 }
 
 function Division() {
-    let x = parseInt(document.getElementById('numb1').value);
-    let y = parseInt(document.getElementById('numb2').value);
-    if(y == 0){
+    if(parseInt(y.value) == 0){
         alert("Error. Second number must not be 0. Please try again !!")
     } else {
-        let z = x / y;
-        document.getElementById("result").innerHTML = "Result Division : " + z;
+        let div = parseInt(x.value) / parseInt(y.value);
+        document.getElementById("result").innerHTML = "Result Division : " + div;
     }
 }
